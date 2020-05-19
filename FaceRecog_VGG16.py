@@ -79,7 +79,7 @@ def addTopModel(bottom_model, num_classes, D=256):
     top_model = Dense(num_classes, activation = "softmax")(top_model)
     return top_model
 
-# Number of classes in the Flowers-17 dataset
+# Number of classes in the Training dataset dataset
 num_classes = 11
 
 FC_Head = addTopModel(vgg16, num_classes)
